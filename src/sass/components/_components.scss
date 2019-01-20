@@ -1,0 +1,62 @@
+// service square
+.service-square {
+}
+
+.btn-link {
+  background: $color-primary;
+  padding: $button-padding;
+  border: none;
+  color: var(--color-primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  & span {
+    margin-left: 3px;
+    transition: margin-left 0.2s;
+  }
+
+  &:hover {
+    color: var(--color-grey-dark-1);
+
+    span {
+      margin-left: 8px;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+}
+
+.btn-style {
+  background: $color-primary;
+  padding: $button-padding;
+  border: none;
+  color: var(--color-primary);
+}
+
+.backdrop {
+  background-color: $color-white;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+}
+
+.toggle-button {
+  @media screen and (min-width: $bp-small) {
+    display: none;
+  }
+  @media screen and (max-width: $bp-small) {
+    display: flex;
+  }
+}
