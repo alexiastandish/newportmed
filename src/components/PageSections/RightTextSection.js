@@ -7,7 +7,7 @@ const RightTextSection = props => {
   // console.log(props)
   return (
     <div className={`horizontal-section ${className}`}>
-      <div className="section">
+      <div className="section section__not-centered">
         <div className="section-textleft__image">
           <img src={info.imageUrl} alt={info.alt} className="section__image-image" />
         </div>

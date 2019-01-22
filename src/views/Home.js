@@ -20,7 +20,11 @@ class Home extends Component {
         <LeftTextSection info={aboutUs} className="primary-section" />
         <ServiceSection services={services} className="primary-section" />
         <RightTextSection info={ourProcess} className="primary-section" />
-        <CenteredSection info={testimonials} className="secondary-section" />
+        <CenteredSection
+          info={testimonials}
+          className="secondary-section"
+          buttonStyle="btn-secondary"
+        />
         <ServiceSection services={newPortMedEffect} className="primary-section" />
         <LeftTextSection info={contactUs} className="secondary-section" />
       </Fragment>

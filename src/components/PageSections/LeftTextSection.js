@@ -8,11 +8,8 @@ const LeftTextSection = props => {
   console.log(info)
   return (
     <div className={`horizontal-section ${className}`}>
-      <div className="section">
-        <section className="section__textleft">
-          <DescFlushLeft header={info.header} desc={info.desc} button={info.button} />
-          <button className="btn-primary">{info.button}</button>
-        </section>
+      <div className="section section__not-centered">
+        <DescFlushLeft header={info.header} desc={info.desc} button={info.button} />
         <div className="section-textleft__image">
           <img src={info.imageUrl} alt={info.alt} className="section__image-image" />
         </div>

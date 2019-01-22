@@ -6,44 +6,46 @@ body {
 }
 
 .heading {
-  // color: $color-white;
   backface-visibility: hidden;
   margin-bottom: 6rem;
+  padding: $padding-body;
 
   &__left {
-    text-align: left;
-  }
+    display: flex;
+    flex-direction: column;
+    &--main {
+      font-size: 4rem;
+      font-weight: 600;
+      letter-spacing: 0.5rem;
 
-  &__left--main {
-    display: block;
-    font-size: 4rem;
-    font-weight: 600;
-    letter-spacing: 0.5rem;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
 
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-  }
-
-  &__left--sub {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: 500;
-    animation: moveInRight 1s ease-out;
+    &--sub {
+      font-size: 1.5rem;
+      font-weight: 500;
+      animation: moveInRight 1s ease-out;
+    }
   }
 
   &__center {
-    text-align: center;
-  }
+    &--main {
+      font-size: 4rem;
+      font-weight: 600;
+      letter-spacing: 0.5rem;
 
-  &__center--main {
-    font-size: 4rem;
-    font-weight: 600;
-    letter-spacing: 0.5rem;
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
 
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+    &--sub {
+      font-size: 1.5rem;
+      font-weight: 500;
+      animation: moveInRight 1s ease-out;
+    }
   }
 }
 
