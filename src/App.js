@@ -10,7 +10,9 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Nav />
-          <Routes siteContent={siteContent} />
+          <div className="container">
+            <Routes siteContent={siteContent} />
+          </div>
         </div>
       </BrowserRouter>
     )

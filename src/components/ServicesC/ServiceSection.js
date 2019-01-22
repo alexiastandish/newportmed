@@ -5,7 +5,7 @@ import ServiceSquare from './ServiceSquare'
 
 const ServiceSection = props => {
   const { services } = props
-  // console.log('services', services)
+  console.log('services', services)
 
   return (
     <div className={`section-services primary`}>

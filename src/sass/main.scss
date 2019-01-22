@@ -1,5 +1,9 @@
-@import 'base/_base';
 @import 'abstracts/variables';
-@import 'layout/_navigation';
+
+@import 'base/_base';
 @import 'base/typography';
+
+@import 'layout/_container';
+@import 'layout/_navigation';
+
 @import 'components/components';
