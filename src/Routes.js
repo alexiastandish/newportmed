@@ -11,7 +11,7 @@ import ContactV from './views/ContactV'
 export default function Routes(props) {
   return (
     <Switch>
-      <Route exact path="/" render={() => <Home homePageInfo={props.siteContent.homePage} />} />
+      <Route exact path="/" render={() => <Home />} />
       <Route exact path="/about" render={() => <AboutV />} />
       <Route path="/services" render={() => <ServicesV />} />
       <Route path="/ourProcess" render={() => <OurProcessV />} />

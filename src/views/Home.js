@@ -1,39 +1,29 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react'
 import LeftTextSection from '../components/PageSections/LeftTextSection'
+import RightTextSection from '../components/PageSections/RightTextSection'
+import CenteredSection from '../components/PageSections/CenteredSection'
 import ServiceSection from '../components/ServicesC/ServiceSection'
+import siteContent from '../siteContent'
 
 class Home extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      about: {},
-      services: [],
-      ourProcess: {},
-      testimonials: [],
-      newportMedEffects: [],
-      contactUs: {},
-    }
-  }
-
-  componentDidMount() {
-    const { ...data } = this.props.homePageInfo
-    this.setState({
-      about: data.aboutUs,
-      services: [...data.services],
-      ourProcess: data.ourProcess,
-      testimonials: data.testimonials,
-      newportMedEffects: [...data.newPortMedEffect],
-      contactUs: data.contactUs,
-    })
-  }
-
   render() {
+    const {
+      aboutUs,
+      services,
+      ourProcess,
+      testimonials,
+      newPortMedEffect,
+      contactUs,
+    } = siteContent.homePage
     return (
-      <div className="Home">
-        <LeftTextSection info={this.state.about} />
-        <ServiceSection services={this.state.services} />
-        <LeftTextSection info={this.state.contactUs} />
-      </div>
+      <Fragment>
+        <LeftTextSection info={aboutUs} className="primary-section" />
+        <ServiceSection services={services} className="primary-section" />
+        <RightTextSection info={ourProcess} className="primary-section" />
+        <CenteredSection info={testimonials} className="secondary-section" />
+        <ServiceSection services={newPortMedEffect} className="primary-section" />
+        <LeftTextSection info={contactUs} className="secondary-section" />
+      </Fragment>
     )
   }
 }

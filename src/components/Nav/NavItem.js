@@ -11,11 +11,9 @@ class NavItem extends Component {
   }
 
   activateMenuItem = () => {
-    // console.log('hi')
     this.setState({ isActive: true })
   }
   deactivateMenuItem = () => {
-    // console.log('bye')
     this.setState({ isActive: false })
   }
 
@@ -26,7 +24,7 @@ class NavItem extends Component {
         onMouseEnter={this.activateMenuItem}
         onMouseLeave={this.deactivateMenuItem}
       >
-        <Link to={this.props.param} className="navbar__link">
+        <Link to={this.props.param} className={`navbar__link ${this.props.className}`}>
           {this.props.displayName}
         </Link>
         {this.state.isActive && this.props.navChildren.length > 0 && (
@@ -48,6 +46,7 @@ class NavItem extends Component {
 }
 
 NavItem.propTypes = {
+  className: PropTypes.string,
   displayName: PropTypes.string.isRequired,
   param: PropTypes.string.isRequired,
   navChildren: PropTypes.arrayOf(
@@ -59,6 +58,7 @@ NavItem.propTypes = {
 }
 
 NavItem.defaultProps = {
+  className: '',
   navChildren: [],
 }
 

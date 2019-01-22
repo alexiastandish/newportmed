@@ -3,9 +3,9 @@ const DescFlushLeft = props => {
   // console.log(props)
   return (
     <section className="heading">
-      <h3 className="heading-primary">
-        <span className="heading-primary--main">{props.header}</span>
-        <span className="heading-primary--sub">{props.desc}</span>
+      <h3 className="heading__left">
+        <span className="heading__left--main">{props.header}</span>
+        <span className="heading__left--sub">{props.desc}</span>
       </h3>
     </section>
   )

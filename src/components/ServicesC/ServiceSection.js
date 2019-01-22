@@ -1,19 +1,21 @@
 import React from 'react'
 import ServiceSquare from './ServiceSquare'
-
-//import './.css';
+import './ServiceSection.scss'
 
 const ServiceSection = props => {
-  const { services } = props
-  console.log('services', services)
+  const { services, className } = props
 
   return (
-    <div className={`section-services primary`}>
-      {services.map(service => (
-        <div key={service.header}>
-          <ServiceSquare service={service} />
-        </div>
-      ))}
+    <div className={`horizontal-section ${className}`}>
+      <div className="section">
+        {/* <div className="homepage-services"> */}
+        {services.map(service => (
+          <div key={service.header} className="homepage-services__square">
+            <ServiceSquare service={service} />
+          </div>
+        ))}
+        {/* </div> */}
+      </div>
     </div>
   )
 }

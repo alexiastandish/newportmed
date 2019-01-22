@@ -1,0 +1,2 @@
+-- Fix responsive font sizing  
+-- remove siteContent prop from Routes in App.js file

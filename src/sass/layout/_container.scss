@@ -1,6 +1,9 @@
 .container {
   // max-width: 120rem;
-  padding: 0 3rem;
+  // margin: 0;
+  // width: 100%;
+  // display: flex;
+  // flex-direction: column;
 
   @media only screen and (max-width: $bp-largest) {
     margin: 0;
