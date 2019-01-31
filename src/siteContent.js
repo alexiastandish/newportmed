@@ -106,10 +106,17 @@ const siteContent = {
       button: 'Button Text Here',
       param: '/testimonials',
       testimonials: [
-        { testimonial1: 'testimonial one here...', person: 'John Doe 1', child: true },
-        { testimonial2: 'testimonial two here...', person: 'John Doe 2', child: true },
-        { testimonial3: 'testimonial three here...', person: 'John Doe 3', child: true },
-        { testimonial4: 'testimonial four here...', person: 'John Doe 4', child: true },
+        {
+          testimonial: `"ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni."`,
+          person: 'John Doe 1',
+          child: true,
+        },
+        {
+          testimonial: `"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque."`,
+          person: 'John Doe 2',
+          child: true,
+        },
+        { testimonial: 'testimonial three here...', person: 'John Doe 3', child: true },
       ],
     },
     newPortMedEffect: [

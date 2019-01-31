@@ -13,10 +13,14 @@ body {
   &__left {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
+
     &--main {
-      font-size: 4rem;
+      font-size: 4.5rem;
       font-weight: 600;
-      letter-spacing: 0.5rem;
+      letter-spacing: 0.25rem;
+      text-transform: uppercase;
+      font-weight: 700;
 
       animation-name: moveInLeft;
       animation-duration: 1s;
@@ -24,17 +28,20 @@ body {
     }
 
     &--sub {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       font-weight: 500;
       animation: moveInRight 1s ease-out;
+      width: 80%;
     }
   }
 
   &__center {
+    margin-bottom: 2rem;
     &--main {
-      font-size: 4rem;
+      font-size: 4.5rem;
+      text-transform: uppercase;
       font-weight: 600;
-      letter-spacing: 0.5rem;
+      letter-spacing: 0.25rem;
 
       animation-name: moveInLeft;
       animation-duration: 1s;
@@ -42,7 +49,7 @@ body {
     }
 
     &--sub {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       font-weight: 500;
       animation: moveInRight 1s ease-out;
     }
@@ -50,19 +57,19 @@ body {
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(to right, $color-primary-light, $color-primary);
-  -webkit-background-clip: text;
-  color: transparent;
-  letter-spacing: 0.2rem;
+  // background-image: linear-gradient(to right, $color-primary-light, $color-primary);
+  // -webkit-background-clip: text;
+  // color: transparent;
+  letter-spacing: 0.1rem;
   transition: all 0.2s;
 
   &:hover {
-    transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+    // transform: skewY(2deg) skewX(15deg) scale(1.1);
+    // text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
   }
 }
 
@@ -80,8 +87,8 @@ body {
   }
 }
 
-a {
-  font-size: 1.4rem;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-}
+// a {
+//   font-size: 1.5rem;
+//   font-family: 'Work Sans', sans-serif;
+//   font-weight: 500;
+// }

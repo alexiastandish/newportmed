@@ -38,7 +38,7 @@ class Home extends Component {
           className="secondary-section"
           buttonStyle="btn-secondary"
         >
-          <CarouselSlider />
+          <CarouselSlider testimonials={testimonials.testimonials} />
         </CenteredSection>
         <ServiceSection services={newPortMedEffect} className="primary-section" />
         <LeftTextSection info={contactUs} className="secondary-section" />

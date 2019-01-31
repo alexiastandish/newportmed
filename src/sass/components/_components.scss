@@ -67,7 +67,7 @@
   color: $color-primary;
   font-family: $default-font-family;
   &:hover {
-    background: $color-primary-dark;
+    background: $color-secondary-dark;
   }
 }
 // tertiary button
@@ -81,12 +81,12 @@
   color: $color-white;
   font-family: $default-font-family;
   &:hover {
-    background: $color-primary-dark;
+    background: $color-secondary-dark;
   }
 }
 
 .section-textleft__image {
-  width: 400px;
+  width: 40rem;
   padding: $padding-body;
 }
 
@@ -129,8 +129,13 @@
 
 .carousel {
   width: 100%;
-}
+  margin: 30px auto;
 
-.slider > .slider-frame > .slider-list {
-  width: 100% !important;
+  &__slide-person {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 1rem;
+  }
 }

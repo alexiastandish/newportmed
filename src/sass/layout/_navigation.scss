@@ -16,6 +16,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
   }
 
   &__list {
@@ -147,6 +149,17 @@
       &:active {
         color: $color-black;
       }
+    }
+  }
+}
+
+@media screen and (max-width: $bp-medium) {
+  .navbar {
+    &__nav-item {
+      font-size: 1.1rem;
+    }
+    &__logo {
+      height: 2.5rem;
     }
   }
 }

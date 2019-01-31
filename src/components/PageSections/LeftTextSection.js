@@ -4,9 +4,7 @@ import './LeftTextSection.scss'
 // import sectionbg from '../../img/home/sectionbg.jpg'
 
 const LeftTextSection = props => {
-  console.log('props', props)
   const { info, className } = props
-  console.log(info)
 
   return (
     <div className={`horizontal-section ${className} `}>

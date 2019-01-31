@@ -3,24 +3,32 @@ import Carousel from 'nuka-carousel'
 import ContainerDimensions from 'react-container-dimensions'
 
 const CarouselSlider = props => {
+  console.log('props', props)
+
+  const { testimonials } = props
+
   return (
     <div className="carousel">
       <ContainerDimensions>
-        {({ containerWidth = 100 }) => (
+        {({ containerWidth = 500 }) => (
           <Carousel
             width={`${containerWidth}px`}
             cellAlign="center"
             autoplay
-            interval={3000}
+            interval={10000}
             enableKeyboardControls
-            renderBottomCenterControls
             withoutControls
             wrapAround
-            style={{ margin: '0 auto' }}
+            style={{ margin: '0 auto', fontSize: '1.5rem' }}
           >
-            <div className="carousel__slide">Slide one</div>
-            <div className="carousel__slide">Slide two</div>
-            <div className="carousel__slide">Slide three</div>
+            {Object.values(testimonials).map(testi => {
+              return (
+                <div>
+                  <p className="carousel__slide">{testi.testimonial}</p>
+                  <p className="carousel__slide-person">{testi.person}</p>
+                </div>
+              )
+            })}
           </Carousel>
         )}
       </ContainerDimensions>
