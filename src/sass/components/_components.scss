@@ -117,8 +117,20 @@
 .primary-section {
   background: $color-white;
   color: $color-primary;
+  &--no-color-background {
+    background: transparent;
+    color: $color-primary;
+  }
 }
 .secondary-section {
   background: $color-primary;
   color: $color-white;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.slider > .slider-frame > .slider-list {
+  width: 100% !important;
 }

@@ -13,7 +13,9 @@ const CenteredSection = props => {
           desc={info.desc}
           button={info.button}
           buttonStyle={buttonStyle}
-        />
+        >
+          {props.children}
+        </DescCentered>
       </div>
     </div>
   )
