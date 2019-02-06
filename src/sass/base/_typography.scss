@@ -7,8 +7,9 @@ body {
 
 .heading {
   backface-visibility: hidden;
-  margin-bottom: 6rem;
+  margin: 3rem 0;
   padding: $padding-body;
+  line-height: 4.5rem;
 
   &__left {
     display: flex;
@@ -18,8 +19,6 @@ body {
     &--main {
       font-size: 4.5rem;
       font-weight: 600;
-      letter-spacing: 0.25rem;
-      text-transform: uppercase;
       font-weight: 700;
 
       animation-name: moveInLeft;
@@ -31,7 +30,7 @@ body {
       font-size: 1.75rem;
       font-weight: 500;
       animation: moveInRight 1s ease-out;
-      width: 80%;
+      line-height: 4.5rem;
     }
   }
 
@@ -39,9 +38,7 @@ body {
     margin-bottom: 2rem;
     &--main {
       font-size: 4.5rem;
-      text-transform: uppercase;
       font-weight: 600;
-      letter-spacing: 0.25rem;
 
       animation-name: moveInLeft;
       animation-duration: 1s;
@@ -57,10 +54,12 @@ body {
 }
 
 .heading-secondary {
-  font-size: 2.5rem;
+  font-size: 1.95rem;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   display: inline-block;
+  line-height: 2.25rem;
   // background-image: linear-gradient(to right, $color-primary-light, $color-primary);
   // -webkit-background-clip: text;
   // color: transparent;

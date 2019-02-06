@@ -10,8 +10,8 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Nav />
-          <div className="container">
-            <Routes siteContent={siteContent} />
+          <div className="container fadeInAnimation">
+            <Routes style={{ width: '100%' }} siteContent={siteContent} />
           </div>
         </div>
       </BrowserRouter>

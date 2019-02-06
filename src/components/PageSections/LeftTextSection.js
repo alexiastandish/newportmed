@@ -1,20 +1,29 @@
-import React from 'react'
 import DescFlushLeft from '../SectionDescs/DescFlushLeft'
 import './LeftTextSection.scss'
-// import sectionbg from '../../img/home/sectionbg.jpg'
+import React, { Component } from 'react'
+import Circle from '../../img/home/Circle'
 
-const LeftTextSection = props => {
-  const { info, className } = props
-
-  return (
-    <div className={`horizontal-section ${className} `}>
-      <div className="section section__not-centered">
-        <DescFlushLeft header={info.header} desc={info.desc} button={info.button} />
-        <div className="section-textleft__image">
-          <img src={info.imageUrl} alt={info.alt} className="section__image-image" />
+class LeftTextSection extends Component {
+  render() {
+    console.log('props', this.props)
+    const { info, className } = this.props
+    return (
+      <div className={`horizontal-section ${className} `}>
+        <div className="section section__not-centered">
+          <DescFlushLeft header={info.header} desc={info.desc} button={info.button} />
+          <div className="section-textleft__image">
+            {info.imageClassName === 'circleImage' && <Circle />}
+            {info.imageUrl !== undefined && (
+              <img
+                src={info.imageUrl}
+                alt={info.alt}
+                className={`section__image-image ${info.imageClassName}`}
+              />
+            )}
+          </div>
         </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 export default LeftTextSection

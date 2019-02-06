@@ -3,8 +3,6 @@ import Carousel from 'nuka-carousel'
 import ContainerDimensions from 'react-container-dimensions'
 
 const CarouselSlider = props => {
-  console.log('props', props)
-
   const { testimonials } = props
 
   return (

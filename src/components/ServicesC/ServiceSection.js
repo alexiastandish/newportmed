@@ -1,20 +1,41 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ServiceSquare from './ServiceSquare'
 import './ServiceSection.scss'
+import anime from 'animejs'
 
-const ServiceSection = props => {
-  const { services, className } = props
-
-  return (
-    <div className={`horizontal-section ${className}`}>
-      <div className="section section__not-centered--services">
-        {services.map(service => (
-          <div key={service.header} className="homepage-services__square">
-            <ServiceSquare service={service} />
-          </div>
-        ))}
+class ServiceSection extends Component {
+  componentDidMount() {
+    anime({
+      targets: '.animeComponent',
+      translateX: [250, 0],
+      easing: 'easeInOutSine',
+      delay: anime.stagger(100),
+      opacity: {
+        value: [0, 1],
+        duration: 1000,
+      },
+    })
+  }
+  render() {
+    const { services, className, header } = this.props
+    return (
+      <div className={`horizontal-section ${className}`}>
+        <div className="section section__not-centered--services">
+          {header !== undefined && (
+            <section className="heading">
+              <div className="heading_left">
+                <span className="heading__left--main">{header}</span>
+              </div>
+            </section>
+          )}
+          {services.map(service => (
+            <div key={service.header} className="homepage-services__square animeComponent">
+              <ServiceSquare service={service} />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
 }
 export default ServiceSection
