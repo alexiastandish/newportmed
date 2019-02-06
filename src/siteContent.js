@@ -112,6 +112,7 @@ const siteContent = {
     },
     testimonials: {
       header: 'Testimonials',
+      desc: 'Hear from your peers that know us best',
       button: 'Button Text Here',
       param: '/testimonials',
       testimonials: [

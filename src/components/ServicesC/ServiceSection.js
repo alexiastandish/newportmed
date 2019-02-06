@@ -24,8 +24,8 @@ class ServiceSection extends Component {
         <div className="section section__not-centered--services">
           {header !== undefined && (
             <section className="heading">
-              <div className="heading_left">
-                <span className="heading__left--main">{header}</span>
+              <div className="heading_center">
+                <span className="heading__center--main">{header}</span>
               </div>
             </section>
           )}

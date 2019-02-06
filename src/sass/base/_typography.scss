@@ -10,6 +10,7 @@ body {
   margin: 3rem 0;
   padding: $padding-body;
   line-height: 4.5rem;
+  width: 70%;
 
   &__left {
     display: flex;
@@ -17,9 +18,9 @@ body {
     margin-bottom: 2rem;
 
     &--main {
-      font-size: 4.5rem;
-      font-weight: 600;
+      font-size: 4.25rem;
       font-weight: 700;
+      margin-bottom: 2rem;
 
       animation-name: moveInLeft;
       animation-duration: 1s;
@@ -30,16 +31,18 @@ body {
       font-size: 1.75rem;
       font-weight: 500;
       animation: moveInRight 1s ease-out;
-      line-height: 4.5rem;
+      line-height: 2.5rem;
     }
   }
 
   &__center {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 2rem;
+
     &--main {
       font-size: 4.5rem;
-      font-weight: 600;
-
+      font-weight: 700;
       animation-name: moveInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out;
@@ -49,6 +52,7 @@ body {
       font-size: 1.75rem;
       font-weight: 500;
       animation: moveInRight 1s ease-out;
+      line-height: 2.5rem;
     }
   }
 }
@@ -86,4 +90,70 @@ body {
 #homepage-circle-diagram:hover path {
   transition: all 2s;
   fill: $color-primary;
+}
+
+@media screen and (max-width: $bp-medium) {
+  .heading {
+    backface-visibility: hidden;
+    margin: 2rem 0;
+    padding: $padding-body;
+    line-height: 3.5rem;
+    width: 80%;
+    &__left {
+      font-size: 3.25rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+
+      &--main {
+        font-size: 3.25rem;
+        margin-bottom: 2rem;
+      }
+
+      &--sub {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
+    &__center {
+      font-size: 3.25rem;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+
+      &--main {
+        font-size: 3.25rem;
+        margin-bottom: 2rem;
+      }
+
+      &--sub {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $bp-small) {
+  .heading {
+    margin: 2rem 0;
+    line-height: 3.5rem;
+    width: 100%;
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+
+      &--main {
+        font-size: 3.25rem;
+        margin-bottom: 2rem;
+      }
+
+      &--sub {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+    }
+  }
 }

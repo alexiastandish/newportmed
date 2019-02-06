@@ -12,7 +12,7 @@ class Circle extends Component {
   componentDidMount() {
     anime({
       targets: 'svg',
-      translateX: [160, 0],
+      translateX: [150, 50],
       rotate: '-360deg',
       easing: 'easeOutSine',
       duration: 1600,
@@ -22,7 +22,13 @@ class Circle extends Component {
   }
   render() {
     return (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 482.5 494.8">
+      <svg
+        id="homepage-circle"
+        className="homepage-circle"
+        style={{ marginTop: '.5rem' }}
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 482.5 494.8"
+      >
         <defs>
           <linearGradient id="MyGradient">
             <stop offset="5%" stopColor="#568dc1" />
