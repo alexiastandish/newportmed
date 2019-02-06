@@ -29,7 +29,7 @@ class Nav extends Component {
     }
 
     return (
-      <nav className="navbar">
+      <nav className="navbar ">
         <div className="navbar__logo-box">
           <img src={logo} alt="logo" className="navbar__logo" />
         </div>

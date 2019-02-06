@@ -12,5 +12,28 @@
     padding: $padding-body;
     box-sizing: border-box;
     width: 250px;
+    margin: 0 1rem;
+  }
+}
+
+.service-square {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+
+  &__desc {
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+
+  &__top {
+    text-align: center;
+    flex-grow: 1;
+  }
+  &__image {
+    width: 6rem;
+    flex-grow: 1;
   }
 }

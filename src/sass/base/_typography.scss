@@ -54,22 +54,14 @@ body {
 }
 
 .heading-secondary {
-  font-size: 1.95rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
   display: inline-block;
-  line-height: 2.25rem;
-  // background-image: linear-gradient(to right, $color-primary-light, $color-primary);
-  // -webkit-background-clip: text;
-  // color: transparent;
-  letter-spacing: 0.1rem;
+  line-height: 2rem;
   transition: all 0.2s;
-
-  &:hover {
-    // transform: skewY(2deg) skewX(15deg) scale(1.1);
-    // text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
-  }
+  margin-bottom: 1.5rem;
 }
 
 .heading-tertiary {
@@ -80,14 +72,18 @@ body {
 
 .paragraph {
   font-size: $default-font-size;
+  line-height: 1.75rem;
 
   &:not(:last-child) {
     margin-bottom: 3rem;
   }
 }
 
-// a {
-//   font-size: 1.5rem;
-//   font-family: 'Work Sans', sans-serif;
-//   font-weight: 500;
-// }
+#homepage-circle-diagram path {
+  transition: all 2s;
+}
+
+#homepage-circle-diagram:hover path {
+  transition: all 2s;
+  fill: $color-primary;
+}

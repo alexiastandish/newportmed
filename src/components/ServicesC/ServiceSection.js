@@ -18,6 +18,7 @@ class ServiceSection extends Component {
   }
   render() {
     const { services, className, header } = this.props
+    const descLimit = 80
     return (
       <div className={`horizontal-section ${className}`}>
         <div className="section section__not-centered--services">
@@ -30,7 +31,7 @@ class ServiceSection extends Component {
           )}
           {services.map(service => (
             <div key={service.header} className="homepage-services__square animeComponent">
-              <ServiceSquare service={service} />
+              <ServiceSquare service={service} descLimit={descLimit} />
             </div>
           ))}
         </div>
