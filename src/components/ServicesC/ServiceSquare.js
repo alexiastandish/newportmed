@@ -16,7 +16,7 @@ const ServiceSquare = props => {
       <div className="service-square__bottom">
         <Link
           to={{ pathname: service.param, hash: service.hash }}
-          className="btn-tertiary service-square__service-btn"
+          className="btn btn-tertiary service-square__service-btn"
         >
           {service.button}
         </Link>

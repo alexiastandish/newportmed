@@ -7,7 +7,7 @@ const DescFlushLeft = props => {
         <span className="heading__left--main">{props.header}</span>
         <span className="heading__left--sub">{props.desc}</span>
       </h3>
-      <button className="btn-primary">{props.button}</button>
+      <button className="btn btn-primary">{props.button}</button>
     </section>
   )
 }

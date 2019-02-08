@@ -21,19 +21,21 @@ class ServiceSection extends Component {
     const descLimit = 80
     return (
       <div className={`horizontal-section ${className}`}>
-        <div className="section section__not-centered--services">
+        <div className="section section__centered">
           {header !== undefined && (
             <section className="heading">
-              <div className="heading_center">
+              <div className="heading__center">
                 <span className="heading__center--main">{header}</span>
               </div>
             </section>
           )}
-          {services.map(service => (
-            <div key={service.header} className="homepage-services__square animeComponent">
-              <ServiceSquare service={service} descLimit={descLimit} />
-            </div>
-          ))}
+          <section className="section__centered--services">
+            {services.map(service => (
+              <div key={service.header} className="homepage-services__square animeComponent">
+                <ServiceSquare service={service} descLimit={descLimit} />
+              </div>
+            ))}
+          </section>
         </div>
       </div>
     )

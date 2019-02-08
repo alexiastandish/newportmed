@@ -17,7 +17,7 @@ class Circle extends Component {
       easing: 'easeOutSine',
       duration: 1600,
       autoplay: true,
-      scale: 1.25,
+      scale: 1.1,
     })
   }
   render() {
@@ -25,7 +25,6 @@ class Circle extends Component {
       <svg
         id="homepage-circle"
         className="homepage-circle"
-        style={{ marginTop: '.5rem' }}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 482.5 494.8"
       >

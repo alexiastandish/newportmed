@@ -1,8 +1,12 @@
 .btn-style {
-  background: $color-primary;
-  padding: $button-padding;
-  border: none;
-  color: var(--color-primary);
+  // background: $color-primary;
+  // padding: $button-padding;
+  // border: none;
+  // // color: var(--color-primary);
+}
+
+.btn {
+  font-size: 1.5rem;
 }
 
 .backdrop {
@@ -95,10 +99,15 @@
   width: 80%;
 
   &__centered {
-    flex-direction: row;
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    &--services {
+      display: flex;
+      flex-direction: row;
+    }
   }
   &__not-centered {
     display: flex;
@@ -107,6 +116,7 @@
     &--services {
       display: flex;
       flex-direction: row;
+      box-sizing: border-box;
       justify-content: space-around;
     }
   }
@@ -144,15 +154,8 @@
   }
 }
 .secondary-section {
-  // background: linear-gradient(
-  //   to right,
-  //   $color-primary-dark 0%,
-  //   $color-primary 71%,
-  //   $color-primary-light 100%
-  // );
   color: $color-white;
   transition: 0.3s;
-  // background: #000;
 
   background: -moz-linear-gradient(
     -45deg,

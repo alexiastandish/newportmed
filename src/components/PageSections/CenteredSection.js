@@ -3,7 +3,6 @@ import React from 'react'
 import DescCentered from '../SectionDescs/DescCentered'
 
 const CenteredSection = props => {
-  console.log('props', props)
   const { info, className, buttonStyle } = props
 
   return (

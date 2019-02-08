@@ -58,7 +58,7 @@ class Home extends Component {
         <CenteredSection
           info={testimonials}
           className="secondary-section "
-          buttonStyle="btn-secondary"
+          buttonStyle="btn btn-secondary"
         >
           <CarouselSlider testimonials={testimonials.testimonials} />
         </CenteredSection>
