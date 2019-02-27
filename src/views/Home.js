@@ -5,8 +5,8 @@ import CenteredSection from '../components/PageSections/CenteredSection'
 import ServiceSection from '../components/ServicesC/ServiceSection'
 import siteContent from '../siteContent'
 import CarouselSlider from '../components/CarouselSlider/CarouselSlider'
-// import { Transition } from 'react-transition-group'
-// import anime from 'animejs'
+import Form from '../components/Form/Form'
+import NewportMedWay from '../components/NewportMedWay/NewportMedWay'
 
 class Home extends Component {
   constructor() {
@@ -14,29 +14,8 @@ class Home extends Component {
     this.textRef = React.createRef()
   }
 
-  // componentDidMount() {
-  //   anime({
-  //     targets: '.animeComponent',
-  //     translateX: [250, 0],
-  //     easing: 'easeInOutSine',
-  //     delay: anime.stagger(100),
-  //     // direction: 'alternate',
-  //     // rotate: '1turn',
-  //     // backgroundColor: '#FFF',
-  //     // duration: 2000,
-  //     // loop: false,
-  //   })
-  // }
   render() {
-    const {
-      aboutUs,
-      services,
-      ourProcess,
-      testimonials,
-      newPortMedEffect,
-      contactUs,
-    } = siteContent.homePage
-    // console.log('aboutUs', aboutUs)
+    const { aboutUs, services, ourProcess, testimonials, newPortMedEffect } = siteContent.homePage
 
     const sectionBackground = siteContent.homePage.aboutUs.background
     return (
@@ -54,7 +33,8 @@ class Home extends Component {
           <LeftTextSection info={aboutUs} className="primary-section--no-color-background " />
           <ServiceSection services={services} className="primary-section--no-color-background " />
         </div>
-        <RightTextSection info={ourProcess} className="primary-section " />
+        <RightTextSection info={ourProcess} className="primary-section" />
+        <NewportMedWay />
         <CenteredSection
           info={testimonials}
           className="secondary-section "
@@ -67,7 +47,7 @@ class Home extends Component {
           services={newPortMedEffect.newPortMedEffectSquares}
           className="primary-section"
         />
-        <LeftTextSection info={contactUs} className="secondary-section" />
+        <Form />
       </div>
     )
   }

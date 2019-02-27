@@ -5,6 +5,7 @@ import moneyicon from './img/home/serviceicons/moneyicon.png'
 import cloudicon from './img/home/serviceicons/cloudicon.png'
 import gears from './img/home/serviceicons/gears.png'
 import medicalicon from './img/home/serviceicons/medicalicon.png'
+import ourprocessgears from './img/home/ourprocess/ourprocessgears.png'
 
 const siteContent = {
   navLinks: [
@@ -65,8 +66,8 @@ const siteContent = {
         child: true,
         header: 'Revenue Cycle Management',
         desc:
-          'The latest technology and proprietary processes are used to insure all charges are captured, documented, submitted and paid. ',
-        button: 'Medical Button',
+          'Financial expectations drive our processes and IT platforms, including feedback + client education.',
+        button: 'Learn More',
         icon: moneyicon,
         param: '/services',
         hash: '#medical',
@@ -74,8 +75,8 @@ const siteContent = {
       {
         child: true,
         header: 'Cloud Based Services',
-        desc: 'Our offerings are global, 24/7, HIPAA Compliant on the cloud. ',
-        button: 'Cloud Button',
+        desc: 'Our offerings are global, 24/7, HIPAA Compliant on the cloud.',
+        button: 'Learn More',
         icon: cloudicon,
         param: '/services',
         hash: '#cloud',
@@ -84,8 +85,8 @@ const siteContent = {
         child: true,
         header: 'Solutions Integration',
         desc:
-          'We bring all the benefits of the best processes and information technology platforms, as well as home-grown Analytics platform and robotic process automation.',
-        button: 'Training Button',
+          'Revenue focused IT solutions. Home-grown Analytics Dashboard. Robotic process automation (Bot’s).',
+        button: 'Learn More',
         icon: gears,
         param: '/services',
         hash: '#training',
@@ -93,9 +94,8 @@ const siteContent = {
       {
         child: true,
         header: 'Practice Advocates',
-        desc:
-          'Though our services are comprehensive and complex, NewportMed makes its offering simple: Our aspiration is to be your partner for the life of your practice',
-        button: 'Money Button',
+        desc: ' Though our services are comprehensive and complex, we make them simple for you.',
+        button: 'Learn More',
         icon: medicalicon,
         param: '/services',
         hash: '#money',
@@ -107,8 +107,7 @@ const siteContent = {
       desc: 'Our Process: The NewportMed Way',
       button: 'Button Text Here',
       param: '/our-process',
-      imageUrl:
-        'https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
+      imageUrl: ourprocessgears,
     },
     testimonials: {
       header: 'Testimonials',
@@ -117,16 +116,47 @@ const siteContent = {
       param: '/testimonials',
       testimonials: [
         {
-          testimonial: `"ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni."`,
-          person: 'John Doe 1',
+          testimonial: `"NewportMed’s passion for healthcare and attention to detail cannot be overestimated. We are very pleased with our working relationship and continue to use them to improve our efficiencies and revenue cycle."`,
+          person: 'James T. Caillouette, M.D. of Newport Orthopedic Institute in Newport Beach, CA',
           child: true,
         },
         {
-          testimonial: `"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque."`,
-          person: 'John Doe 2',
+          testimonial: `“NewportMed has done a terrific job and we are very pleased with their collaboration. Their education services and custom charge ticket development has had a direct impact on our bottom line.”`,
+          person: 'Cara M. Waller, C.E.O. of Newport Orthopedic Institute in Newport Beach, CA',
           child: true,
         },
-        { testimonial: 'testimonial three here...', person: 'John Doe 3', child: true },
+        {
+          testimonial:
+            '"With your help, we made a smooth transition to electronic medical records (EMR) and achieved our goal of satisfying the criteria for Phase I of Meaningful Use for 100% of our physicians.  I feel confident that SOCO and NMS have set in motion our plans for SOCO to continue onto Phase II of Meaningful Use."',
+          person:
+            'Michael J. Fitzpatrick, M.D., President of South Orange County Orthopedics in Mission Viejo, CA',
+          child: true,
+        },
+        {
+          testimonial:
+            '"We made the change to Newport Medical Services back in February 2018. This decision came after an enormous amount of frustration and lost revenue from our previous billing company. Since we have made the change, our monthly revenue has continued to increase! We are averaging almost 35-40% more than in previous years under our old system."',
+          person: 'Ian Corland, Administrator of Expert Spine Care in Nashville, TN',
+          child: true,
+        },
+        {
+          testimonial:
+            '“I have been extremely happy using NewportMed as our billing company. In all my years of experience, I have never been as satisfied as I am with them.”',
+          person: 'Michael Gillman, M.D. of Restore Orthopedic and Spine Center in Orange, CA',
+          child: true,
+        },
+        {
+          testimonial:
+            '"NewportMed’s services are second-to-none. Your coding knowledge and documentation reviews of the sub-specialty services I provide has enabled me to have a level of financial satisfaction I did not have prior to working with you. Your partnership with my practice has also enabled me to focus more time on surgeries and services I specialize in."',
+          person:
+            'Christopher Duma, M.D. of Brain & Spine Surgeons of Orange County in Newport Beach, CA',
+          child: true,
+        },
+        {
+          testimonial:
+            '"I’ve been extremely impressed with your knowledge of my specialty and expertise in the coding nuances. In addition, your understanding and direct involvement in credentialing and proper dictation has been invaluable."',
+          person: 'Richard Kim, M.D., M.S. of DISC Sports and Spine Center in Newport Beach, CA',
+          child: true,
+        },
       ],
     },
     newPortMedEffect: {
@@ -136,7 +166,7 @@ const siteContent = {
           header: 'effect One',
           desc: 'effect one desc',
           button: 'Button Text Here',
-          icon: 'https://i.imgur.com/hejiuLu.png',
+          icon: cloudicon,
           param: '/effects',
           hash: '#one',
           child: true,
@@ -145,7 +175,7 @@ const siteContent = {
           header: 'effect two',
           desc: 'effect two desc',
           button: 'Button Text Here',
-          icon: 'https://i.imgur.com/hejiuLu.png',
+          icon: cloudicon,
           param: '/effects',
           hash: '#two',
           child: true,
@@ -154,7 +184,7 @@ const siteContent = {
           header: 'effect three',
           desc: 'effect three desc',
           button: 'Button Text Here',
-          icon: 'https://i.imgur.com/hejiuLu.png',
+          icon: cloudicon,
           param: '/effects',
           hash: '#three',
           child: true,
@@ -163,7 +193,7 @@ const siteContent = {
           header: 'effect four',
           desc: 'effect four desc',
           button: 'Button Text Here',
-          icon: 'https://i.imgur.com/hejiuLu.png',
+          icon: cloudicon,
           param: '/effects',
           hash: '#four',
           child: true,

@@ -60,7 +60,6 @@
   &__dropdown {
     z-index: 100;
     position: absolute;
-    background-color: $color-black;
     list-style: none;
     padding: 1rem;
     margin-top: 5rem;
@@ -91,6 +90,11 @@
     display: block;
     text-align: center;
     margin: 0 auto;
+    color: $color-primary;
+  }
+
+  &__item--dropdown:hover {
+    color: $color-black;
   }
 }
 

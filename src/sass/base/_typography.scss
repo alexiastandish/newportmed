@@ -7,10 +7,8 @@ body {
 
 .heading {
   backface-visibility: hidden;
-  margin: 3rem 0;
-  padding: $padding-body;
   line-height: 4.5rem;
-  width: 70%;
+  width: 50%;
 
   &__left {
     display: flex;
@@ -28,10 +26,11 @@ body {
     }
 
     &--sub {
-      font-size: 1.75rem;
-      font-weight: 500;
+      font-size: 1.65rem;
+      font-weight: 400;
       animation: moveInRight 1s ease-out;
       line-height: 2.5rem;
+      color: $color-black;
     }
   }
 
@@ -77,6 +76,7 @@ body {
 .paragraph {
   font-size: $default-font-size;
   line-height: 1.75rem;
+  color: $color-black;
 
   &:not(:last-child) {
     margin-bottom: 3rem;

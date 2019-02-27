@@ -18,7 +18,7 @@ class ServiceSection extends Component {
   }
   render() {
     const { services, className, header } = this.props
-    const descLimit = 80
+    const descLimit = 100
     return (
       <div className={`horizontal-section ${className}`}>
         <div className="section section__centered">

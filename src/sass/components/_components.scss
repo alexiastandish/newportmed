@@ -5,10 +5,6 @@
   // // color: var(--color-primary);
 }
 
-.btn {
-  font-size: 1.5rem;
-}
-
 .backdrop {
   background-color: $color-white;
   opacity: 0.9;
@@ -36,7 +32,7 @@
 .link-btn {
   background: $color-primary;
   border-radius: 2.5rem;
-  color: $color-white;
+  color: #e0fbfc;
   padding: 0.5rem 1.5rem;
   transition: all 0.1s ease;
   font-weight: 400;
@@ -53,8 +49,10 @@
   border-radius: 2.5rem;
   padding: 1rem 2rem;
   cursor: pointer;
-  color: $color-white;
+  color: #e0fbfc;
   font-family: $default-font-family;
+  font-size: 1.5rem;
+  font-weight: 500;
   &:hover {
     background: $color-primary-dark;
   }
@@ -63,13 +61,16 @@
 // secondary button
 .btn-secondary {
   border: transparent;
-  background: $color-white;
+  background: #e0fbfc;
   border-radius: 2.5rem;
   text-decoration: none;
   padding: 1rem 2rem;
   cursor: pointer;
   color: $color-primary;
   font-family: $default-font-family;
+  font-size: 1.5rem;
+  font-weight: 600;
+
   &:hover {
     background: $color-secondary-dark;
   }
@@ -96,7 +97,8 @@
 
 .section {
   padding: $padding-body;
-  width: 80%;
+  width: 90%;
+  margin: 2rem auto;
 
   &__centered {
     display: flex;
@@ -112,7 +114,8 @@
   &__not-centered {
     display: flex;
     flex-direction: row;
-
+    align-items: center;
+    justify-content: space-around;
     &--services {
       display: flex;
       flex-direction: row;
@@ -121,6 +124,30 @@
     }
   }
 }
+
+.carousel {
+  width: 100%;
+  margin: 30px auto;
+
+  li {
+    padding: 0 2rem !important;
+  }
+
+  &__slide-person {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 2rem;
+  }
+}
+
+.footer {
+  &__logo {
+    height: 2.2rem;
+  }
+}
+
 @media screen and (max-width: $bp-medium) {
   .section {
     &__not-centered {
@@ -197,19 +224,6 @@
   background-position: 100% 100%;
 }
 
-.carousel {
-  width: 100%;
-  margin: 30px auto;
-
-  &__slide-person {
-    font-size: 1.2rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-top: 1rem;
-  }
-}
-
 .fadeInAnimation {
   width: 100%;
 }
@@ -270,29 +284,47 @@
     opacity: 1;
   }
 }
+.carousel {
+  width: 100%;
+  margin: 30px auto;
 
-@media screen and (max-width: $bp-small) {
-  #homepage-circle {
-    display: none;
+  li {
+    padding: 0 3rem !important;
   }
 
+  &__slide-person {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: $bp-medium) {
   .section-textleft__image {
     padding: $padding-body;
   }
 
   .section {
     padding: $padding-body;
-    width: 90%;
 
     &__centered {
-      flex-direction: row;
       display: flex;
-      justify-content: center;
-      text-align: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+
+      &--services {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+      }
     }
     &__not-centered {
       display: flex;
-      flex-direction: column;
+      align-items: center;
 
       &--services {
         display: flex;
@@ -302,10 +334,10 @@
     }
   }
 }
+
 @media screen and (max-width: $bp-smallest) {
   .section {
     padding: $padding-body;
-    width: 90%;
 
     &__centered {
       flex-direction: row;
@@ -323,5 +355,24 @@
         justify-content: space-around;
       }
     }
+  }
+  .carousel {
+    width: 100%;
+    margin: 30px auto;
+
+    li {
+      padding: 0 10rem !important;
+    }
+
+    &__slide-person {
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      margin-top: 3rem;
+    }
+  }
+  #homepage-circle {
+    display: none;
   }
 }
