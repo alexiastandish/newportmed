@@ -9,7 +9,8 @@
   margin-bottom: 1rem;
 
   &__logo {
-    height: 3.2rem;
+    width: 29rem;
+    height: auto;
   }
 
   &__nav-item {
@@ -48,12 +49,12 @@
 
   &__link {
     text-decoration: none;
-    color: $color-primary;
+    color: $color-blue;
     padding: 1rem;
     text-align: center;
 
     &:visited {
-      color: $color-primary;
+      color: $color-blue;
     }
   }
 
@@ -64,7 +65,7 @@
     padding: 1rem;
     margin-top: 5rem;
     padding: 1em;
-    background: $color-primary-light;
+    background: $color-lightblue;
     box-shadow: 2px 3px 3px 0 $color-gray-opacity;
   }
 
@@ -78,7 +79,7 @@
     z-index: -100;
 
     border: 0.75em solid black;
-    border-color: $color-primary-light;
+    border-color: $color-lightblue;
 
     transform-origin: 0 0;
     transform: rotate(225deg);
@@ -90,7 +91,7 @@
     display: block;
     text-align: center;
     margin: 0 auto;
-    color: $color-primary;
+    color: $color-blue;
   }
 
   &__item--dropdown:hover {
@@ -143,10 +144,10 @@
     }
     &__item {
       padding: 0.5rem 0;
-      color: $color-primary;
+      color: $color-blue;
     }
     &__link {
-      color: $color-primary;
+      color: $color-blue;
       margin: 0 3rem;
       text-decoration: none;
 

@@ -21,7 +21,7 @@ const CarouselSlider = props => {
           >
             {Object.values(testimonials).map(testi => {
               return (
-                <div>
+                <div key={testi.person}>
                   <p className="carousel__slide">{testi.testimonial}</p>
                   <p className="carousel__slide-person">{testi.person}</p>
                 </div>

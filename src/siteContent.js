@@ -1,6 +1,4 @@
 import sectionbg from './img/home/sectionbg.png'
-// import aboutuscircle from './img/home/aboutuscircle.png'
-// import Circle from '../src/img/home/Circle'
 import moneyicon from './img/home/serviceicons/moneyicon.png'
 import cloudicon from './img/home/serviceicons/cloudicon.png'
 import gears from './img/home/serviceicons/gears.png'
@@ -42,7 +40,7 @@ const siteContent = {
     {
       displayName: 'Contact Us',
       param: '/contact-us',
-      className: 'link-btn',
+      className: 'link-btn btn',
     },
   ],
   homePage: {
@@ -52,10 +50,9 @@ const siteContent = {
       opacity: 0,
       header: 'Ensuring the financial health of the practices we serve.',
       desc: 'The last RCM company you will ever have to partner with.',
-      button: 'About Text Here',
+      button: 'Check us out',
       param: '/about-us',
       alt: 'about-us',
-      // imageUrl: <Circle />,
       background: sectionbg,
       progress: 0,
       imageClassName: 'circleImage',

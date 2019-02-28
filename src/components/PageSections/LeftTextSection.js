@@ -5,7 +5,6 @@ import Circle from '../../img/home/Circle'
 
 class LeftTextSection extends Component {
   render() {
-    console.log('props', this.props)
     const { info, className } = this.props
     return (
       <div className={`horizontal-section ${className} `}>

@@ -6,7 +6,7 @@ const CenteredSection = props => {
   const { info, className, buttonStyle } = props
 
   return (
-    <div className={`horizontal-section ${className}`}>
+    <div className={`horizontal-section ${className} `} id="mySVG">
       <div className="section section__centered">
         <DescCentered
           header={info.header}

@@ -3,13 +3,39 @@ import './Form.scss'
 
 function Form() {
   const [formState, setFormState] = useState({
-    firstName: '',
-    lastName: '',
+    fname: '',
+    lname: '',
     email: '',
     message: '',
   })
-  // const [formInput, submitFormInput] = useState()
-  console.log('formState', formState)
+
+  // function handleSubmit(e) {
+  //   e.preventDefault()
+  //   const name = document.getElementById('name').value
+  //   const email = document.getElementById('email').value
+  //   const message = document.getElementById('message').value
+  //   axios({
+  //     method: 'POST',
+  //     url: 'http://localhost:3001/send',
+  //     data: {
+  //       name: name,
+  //       email: email,
+  //       messsage: message,
+  //     },
+  //   }).then(response => {
+  //     if (response.data.msg === 'success') {
+  //       alert('Message Sent.')
+  //       resetForm()
+  //     } else if (response.data.msg === 'fail') {
+  //       alert('Message failed to send.')
+  //     }
+  //   })
+  // }
+
+  // function resetForm() {
+  //   document.getElementById('contact-form').reset()
+  // }
+
   return (
     <section className="contact">
       <div className="contact__section section section__not-centered">
@@ -20,31 +46,36 @@ function Form() {
           </h3>
         </section>
 
-        <form action="/action_page.php" className="contact__form">
+        <form
+          action="https://formspree.io/alexiastandish@gmail.com"
+          method="POST"
+          className="contact__form"
+        >
           <label>First Name</label>
           <input
             type="text"
-            id="firstname"
+            name="firstname"
             className="contact__input"
-            value={formState.firstName}
+            value={formState.fname}
             onChange={e => {
-              setFormState({ ...formState, firstName: e.target.value })
+              setFormState({ ...formState, fname: e.target.value })
             }}
           />
           <label>Last Name</label>
           <input
             type="text"
-            id="lastname"
+            name="lastname"
             className="contact__input"
-            value={formState.lastName}
+            value={formState.lname}
             onChange={e => {
-              setFormState({ ...formState, lastName: e.target.value })
+              setFormState({ ...formState, lname: e.target.value })
             }}
           />
           <label>Email</label>
           <input
             type="email"
-            id="email"
+            name="email"
+            aria-describedby="emailHelp"
             placeholder="Your Email Here"
             className="contact__input"
             value={formState.email}
@@ -54,16 +85,18 @@ function Form() {
           />
           <label>Message</label>
           <textarea
-            id="message"
-            name="message"
             placeholder="Type here..."
             className="contact__input"
+            name="message"
+            rows="5"
             value={formState.message}
             onChange={e => {
               setFormState({ ...formState, message: e.target.value })
             }}
           />
-          <input type="submit" className="contact__button" value="Submit" />
+          <button type="submit" className="contact__button">
+            Submit
+          </button>
         </form>
       </div>
     </section>
