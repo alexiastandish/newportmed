@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
+// import { NavHashLink as NavLink } from 'react-router-hash-link'
 
 class NavItem extends Component {
   constructor() {
@@ -29,10 +30,16 @@ class NavItem extends Component {
         </Link>
         {this.state.isActive && this.props.navChildren.length > 0 && (
           <ul className="navbar__dropdown">
-            {this.props.navChildren.map(navChild => {
+            {this.props.navChildren.map((navChild, index) => {
               return (
-                <li key={navChild.param}>
-                  <Link to={navChild.param} className="navbar__item--dropdown">
+                <li key={index}>
+                  <Link
+                    to={{
+                      pathname: `${navChild.param}`,
+                      state: `${navChild.hash}`,
+                    }}
+                    className="navbar__item--dropdown"
+                  >
                     {navChild.displayName}
                   </Link>
                 </li>

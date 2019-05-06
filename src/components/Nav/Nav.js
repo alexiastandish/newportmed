@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../../img/logo.png'
 import Hamburger from './Hamburger'
 import MobileMenu from './MobileMenu'
@@ -31,7 +32,9 @@ class Nav extends Component {
     return (
       <nav className="navbar ">
         <div className="navbar__logo-box">
-          <img src={logo} alt="logo" className="navbar__logo" />
+          <Link to="/">
+            <img src={logo} alt="logo" className="navbar__logo" />
+          </Link>
         </div>
 
         <div>

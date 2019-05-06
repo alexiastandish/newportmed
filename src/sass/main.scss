@@ -1,12 +1,13 @@
-@import 'abstracts/variables';
+@import 'abstracts/_variables';
 
 @import 'utilities/_utilities';
 
-@import 'utilities/animations';
+@import 'utilities/_animations';
 @import 'base/_base';
-@import 'base/typography';
+
+@import 'base/_typography';
 
 @import 'layout/_container';
 @import 'layout/_navigation';
 
-@import 'components/components';
+@import 'components/_components';

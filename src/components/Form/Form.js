@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
-import './Form.scss'
+import React, { useState } from "react";
+import "./Form.scss";
 
 function Form() {
   const [formState, setFormState] = useState({
-    fname: '',
-    lname: '',
-    email: '',
-    message: '',
-  })
+    fname: "",
+    lname: "",
+    email: "",
+    message: ""
+  });
 
   // function handleSubmit(e) {
   //   e.preventDefault()
@@ -42,7 +42,9 @@ function Form() {
         <section className="heading">
           <h3 className="heading__left">
             <span className="heading__left--main">Contact Us</span>
-            <span className="heading__left--sub">Contact us subtext</span>
+            <span className="heading__left--sub">
+              Send a message! Let's chat...
+            </span>
           </h3>
         </section>
 
@@ -58,7 +60,7 @@ function Form() {
             className="contact__input"
             value={formState.fname}
             onChange={e => {
-              setFormState({ ...formState, fname: e.target.value })
+              setFormState({ ...formState, fname: e.target.value });
             }}
           />
           <label>Last Name</label>
@@ -68,7 +70,7 @@ function Form() {
             className="contact__input"
             value={formState.lname}
             onChange={e => {
-              setFormState({ ...formState, lname: e.target.value })
+              setFormState({ ...formState, lname: e.target.value });
             }}
           />
           <label>Email</label>
@@ -80,7 +82,7 @@ function Form() {
             className="contact__input"
             value={formState.email}
             onChange={e => {
-              setFormState({ ...formState, email: e.target.value })
+              setFormState({ ...formState, email: e.target.value });
             }}
           />
           <label>Message</label>
@@ -91,15 +93,15 @@ function Form() {
             rows="5"
             value={formState.message}
             onChange={e => {
-              setFormState({ ...formState, message: e.target.value })
+              setFormState({ ...formState, message: e.target.value });
             }}
           />
-          <button type="submit" className="contact__button">
+          <button type="submit" className="btn btn-tertiary">
             Submit
           </button>
         </form>
       </div>
     </section>
-  )
+  );
 }
-export default Form
+export default Form;

@@ -13,7 +13,11 @@ export default function Routes(props) {
     <Switch>
       <Route exact path="/" render={() => <Home />} />
       <Route exact path="/about" render={() => <AboutV />} />
-      <Route path="/services" render={() => <ServicesV />} />
+      <Route
+        path="/services"
+        render={() => <ServicesV services={props.siteContent.servicesPage} />}
+      />
+      <Route path="/services#practice-advocates" render={() => <ServicesV />} />
       <Route path="/ourProcess" render={() => <OurProcessV />} />
       <Route path="/testimonials" render={() => <TestimonialsV />} />
       <Route path="/newportmedEffect" render={() => <NewPortMedEffectV />} />

@@ -4,11 +4,6 @@ import anime from 'animejs'
 import { Link } from 'react-router-dom'
 
 class Circle extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
   componentDidMount() {
     anime({
       targets: 'svg',
@@ -55,7 +50,13 @@ class Circle extends Component {
         <title>homepage</title>
 
         <g id="cloud">
-          <Link to="/services" id="homepage-circle-diagram">
+          <Link
+            to={{
+              pathname: `services`,
+              state: `cloud-based-services`,
+            }}
+            id="homepage-circle-diagram"
+          >
             <g>
               <path
                 fill="url(#MyGradient)"
@@ -71,7 +72,13 @@ class Circle extends Component {
           </Link>
         </g>
         <g id="medical">
-          <Link to="/services" id="homepage-circle-diagram">
+          <Link
+            to={{
+              pathname: `services`,
+              state: `practice-advocates`,
+            }}
+            id="homepage-circle-diagram"
+          >
             <g>
               <path
                 fill="url(#MyGradient)"
@@ -86,7 +93,13 @@ class Circle extends Component {
           </Link>
         </g>
         <g id="cloud-2" data-name="cloud">
-          <Link to="/services" id="homepage-circle-diagram">
+          <Link
+            to={{
+              pathname: `services`,
+              state: `revenue-cycle-management`,
+            }}
+            id="homepage-circle-diagram"
+          >
             <path
               d="M428.5,336.6l-57.1-46.8a102,102,0,0,1-3.2,23.6A84.2,84.2,0,0,1,312,367.9V342.5a1.5,1.5,0,0,0-2.6-.9l-23.7,29-46.5,56.8a1.5,1.5,0,0,0,0,1.8l46.3,56.5L309.4,515a1.5,1.5,0,0,0,2.6-.9V484.8h.3A199.2,199.2,0,0,0,484.9,318.2a237.2,237.2,0,0,0,1.6-27.6l-56.2,46A1.5,1.5,0,0,1,428.5,336.6Z"
               transform="translate(-59.2 -58.5)"
@@ -100,7 +113,13 @@ class Circle extends Component {
           </Link>
         </g>
         <g id="gears">
-          <Link to="/services" id="homepage-circle-diagram">
+          <Link
+            to={{
+              pathname: `services`,
+              state: `solutions-integration`,
+            }}
+            id="homepage-circle-diagram"
+          >
             <path
               d="M239.2,427.4l46.5-56.8a103.4,103.4,0,0,1-24.5-3.2,84.6,84.6,0,0,1-54.5-56.2h25.5a1.5,1.5,0,0,0,.9-2.6l-85.8-70.2a1.3,1.3,0,0,0-1.8,0L89.6,284.1h0L59.7,308.6a1.4,1.4,0,0,0,.9,2.6H89.8A199.2,199.2,0,0,0,256.5,484.1a221.5,221.5,0,0,0,29,1.6l-46.3-56.5A1.5,1.5,0,0,1,239.2,427.4Z"
               transform="translate(-59.2 -58.5)"
