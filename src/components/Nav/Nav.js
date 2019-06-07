@@ -1,32 +1,33 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import logo from '../../img/logo.png'
-import Hamburger from './Hamburger'
-import MobileMenu from './MobileMenu'
-import Backdrop from '../Backdrop/Backdrop'
-import NavItem from './NavItem'
-import siteContent from '../../siteContent'
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import logo from "../../img/logo.png";
+import Hamburger from "./Hamburger";
+import MobileMenu from "./MobileMenu";
+import Backdrop from "../Backdrop/Backdrop";
+import NavItem from "./NavItem";
+import siteContent from "../../siteContent";
 
 class Nav extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
-      sideDrawerOpen: false,
-    }
+      sideDrawerOpen: false
+    };
   }
 
   drawerToggleClickHandler() {
     this.setState(prevState => {
-      return { sideDrawerOpen: !prevState.sideDrawerOpen }
-    })
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    });
   }
 
   render() {
-    let backdrop
-    let mobileMenu
+    let backdrop;
+    let mobileMenu;
+
     if (this.state.sideDrawerOpen) {
-      mobileMenu = <MobileMenu />
-      backdrop = <Backdrop />
+      mobileMenu = <MobileMenu />;
+      backdrop = <Backdrop />;
     }
 
     return (
@@ -43,7 +44,9 @@ class Nav extends Component {
           {backdrop}
         </div>
 
-        {this.state.sideDrawerOpen && <MobileMenu click={() => this.drawerToggleClickHandler()} />}
+        {this.state.sideDrawerOpen && (
+          <MobileMenu click={() => this.drawerToggleClickHandler()} />
+        )}
 
         <ul className="navbar__list clearfix">
           {siteContent.navLinks.map(navChild => {
@@ -55,12 +58,12 @@ class Nav extends Component {
                 navChildren={navChild.navChildren}
                 className={navChild.className}
               />
-            )
+            );
           })}
         </ul>
       </nav>
-    )
+    );
   }
 }
 
-export default Nav
+export default Nav;

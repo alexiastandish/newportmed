@@ -14,7 +14,7 @@ const NewportMedEffectService = props => {
         <img
           src={service.icon}
           alt="service"
-          // className="service-square__image"
+          className="newportmedeffect-square__image"
         />
         <h3 className="heading-secondary">{service.header}</h3>
         <p className="paragraph service-square__desc">{itemDescription}</p>
